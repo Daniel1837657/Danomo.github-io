@@ -1,0 +1,246 @@
+/* Fuente retro */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+    color: #f0f0f0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #ff00cc;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+header {
+    background: #0d0d0d;
+    box-shadow: 0 0 10px #ff00cc;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    width: 40px;
+    height: auto;
+}
+
+.logo {
+    color: #00f2ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff00cc;
+}
+
+.hero {
+    text-align: center;
+    padding: 6rem 1rem;
+    background: linear-gradient(145deg, #1a1a1a 0%, #000000 100%);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #00f2ff;
+    text-shadow: 0 0 10px #00f2ff;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    color: #ccc;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    border: 2px solid #ff00cc;
+    background: transparent;
+    color: #ff00cc;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: #ff00cc;
+    color: #0a0a0a;
+    box-shadow: 0 0 10px #ff00cc;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #00f2ff;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #00f2ff;
+}
+
+/* Música */
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.track {
+    background: #141414;
+    padding: 1rem;
+    border: 1px solid #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #111;
+    transition: transform 0.3s;
+}
+
+.track:hover {
+    transform: translateY(-5px);
+}
+
+.track img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.track h3 {
+    margin: 1rem 0 0.5rem;
+    color: #ff00cc;
+}
+
+audio {
+    width: 100%;
+}
+
+/* Biografía */
+.bio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.bio-text {
+    flex: 1;
+}
+
+.bio-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00f2ff;
+}
+
+/* Galería */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ff00cc;
+}
+
+/* Contacto */
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-info p,
+.contact-info a {
+    color: #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background: #222;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background: #0a0a0a;
+    text-align: center;
+    padding: 2rem 0;
+    color: #888;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
+
+/* Botón subir */
+#volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background: #ff00cc;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    display: none;
+    z-index: 999;
+    box-shadow: 0 0 10px #ff00cc;
+}
+
+#volver-arriba:hover {
+    background: #00f2ff;
+    box-shadow: 0 0 10px #00f2ff;
+}

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /politics.html
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /cgi-bin/
+Sitemap: https://danomo.music.com/sitemap.xml
